@@ -1,0 +1,25 @@
+version: '2'
+networks:
+  loyalty:
+    external: true
+services:
+  springboot-microservice-discovery:
+    container_name: springboot-microservice-discovery
+    image: https://dockerreg.local:5000/springboot-microservice-discovery:develop
+    restart: always
+    #volumes:
+    #        -  /root/UM/maccess/:/opt/storage/UM/maccess
+    environment:
+      - SPRING_PROFILES_ACTIVE=native,tst
+    #        - DB_HOST=172.16.170.108:3306
+    #        - DB_USER=root
+    #        - DB_PASS=asd123ASD!@#
+    ports:
+      - '8000:8000'
+    networks:
+      - loyalty
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 172.16.120.59:24224
+        tag: "{{.ImageName}}/{{.Name}}/{{.ID}}"
