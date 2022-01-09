@@ -1,4 +1,4 @@
-FROM https://dockerreg.local:5000/openjdk:13-alpine
+FROM dockerreg.local:5000/openjdk:13-alpine
 RUN apk add --no-cache tzdata
 ENV TZ Asia/Tehran
 RUN addgroup -S spring && adduser -S spring -G spring

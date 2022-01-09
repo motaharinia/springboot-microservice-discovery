@@ -3,9 +3,9 @@ networks:
   loyalty:
     external: true
 services:
-  springboot-microservice-discovery:
-    container_name: springboot-microservice-discovery
-    image: https://dockerreg.local:5000/springboot-microservice-discovery:develop
+  ms-discovery:
+    container_name: ms-discovery
+    image: dockerreg.local:5000/ms-discovery:develop
     restart: always
     #volumes:
     #        -  /root/UM/maccess/:/opt/storage/UM/maccess

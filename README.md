@@ -1,4 +1,4 @@
-# springboot-microservice-discovery
+# ms-discovery
 
 roles:
 org.springframework.cloud:

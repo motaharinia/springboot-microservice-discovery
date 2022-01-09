@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.motaharinia.ms</groupId>
-    <artifactId>springboot-microservice-discovery</artifactId>
+    <artifactId>ms-discovery</artifactId>
     <version>0.0.1</version>
-    <name>Company Project Discovery</name>
+    <name>Discovery</name>
     <description>Discovery is a service for Client developed by Company Corp.</description>
     <url>https://github.com/motaharinia</url>
 
